@@ -16,4 +16,10 @@ public class TriangleTest {
         assertNotEquals(90, Triangle.area(10, 15), 0);
     }
 
+    @Test
+    public void testPythagoras() {
+        assertEquals(11, Math.round(Triangle.pythagoras(5, 10, 15)), 0);
+        assertNotEquals(11.18, Triangle.pythagoras(5, 10, 15), 0);
+    }
+
 }
